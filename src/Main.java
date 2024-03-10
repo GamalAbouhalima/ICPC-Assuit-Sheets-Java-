@@ -23,9 +23,22 @@ public class Main {
 
 
     }
-    public static void main(String[] args) {
-        problem_A_Say_Hello();
-        problem_B_Basic_Data_Types();
+    static void problem_C_Simple_Calculator(){
+        long x,y;
+        Scanner scan=new Scanner(System.in);
+        x=scan.nextInt();
+        y=scan.nextInt();
+        long a=x+y;
+        long b=x*y;
+        long c=x-y; 
+        System.out.println(x+" "+"+"+" "+y+" "+"= "+a);
+        System.out.println(x+" "+"*"+" "+y+" "+"= "+b);
+        System.out.println(x+" "+"-"+" "+y+" "+"= "+c);
 
+    }
+    public static void main(String[] args) {
+//        problem_A_Say_Hello();
+//        problem_B_Basic_Data_Types();
+        problem_C_Simple_Calculator();
     }
 }
