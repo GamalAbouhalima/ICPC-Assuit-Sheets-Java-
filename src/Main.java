@@ -30,15 +30,28 @@ public class Main {
         y=scan.nextInt();
         long a=x+y;
         long b=x*y;
-        long c=x-y; 
+        long c=x-y;
         System.out.println(x+" "+"+"+" "+y+" "+"= "+a);
         System.out.println(x+" "+"*"+" "+y+" "+"= "+b);
         System.out.println(x+" "+"-"+" "+y+" "+"= "+c);
 
     }
+    static void problem_D_Difference(){
+        long a,b,c,d;
+        Scanner scan=new Scanner(System.in);
+        a=scan.nextLong();
+        b=scan.nextLong();
+        c=scan.nextLong();
+        d=scan.nextLong();
+        long x=(a*b)-(c*d);
+        System.out.println("Difference "+"= "+x);
+    }
+
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
-        problem_C_Simple_Calculator();
+//        problem_C_Simple_Calculator();
+         problem_D_Difference();
+
     }
 }
