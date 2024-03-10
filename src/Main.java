@@ -46,12 +46,20 @@ public class Main {
         long x=(a*b)-(c*d);
         System.out.println("Difference "+"= "+x);
     }
+    static void problem_E_Area_of_a_Circle(){
+        Scanner scan=new Scanner(System.in);
+        double radius;
+        radius=scan.nextFloat();
+        double pi=3.141592653;
+        double area=pi*Math.pow(radius,2);
+        System.out.printf("%.9f",area);
 
+    }
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
 //        problem_C_Simple_Calculator();
-         problem_D_Difference();
-
+//        problem_D_Difference();
+        problem_E_Area_of_a_Circle();
     }
 }
