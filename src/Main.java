@@ -115,6 +115,17 @@ public class Main {
         }
 
     }
+    static void problem_J_Multiples(){
+        int a,b;
+        Scanner scan =new Scanner(System.in);
+        a=scan.nextInt();
+        b=scan.nextInt();
+        if(a%b==0 || b%a==0){
+            System.out.println("Multiples");
+        }else{
+            System.out.println("No Multiples");
+        }
+    }
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
@@ -124,6 +135,8 @@ public class Main {
 //        problem_F_Digits_Summation();
 //        problem_G_Summation_from_1_to_N();
 //        problem_H_Two_numbers();
-        problem_I_Welcome_for_you_with_Conditions();
+//        problem_I_Welcome_for_you_with_Conditions();
+        problem_J_Multiples();
+
     }
 }
