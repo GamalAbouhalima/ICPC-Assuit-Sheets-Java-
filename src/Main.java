@@ -87,12 +87,12 @@ public class Main {
         // convert from double to int
         int value1 = (int)d2;
 
-        // function to get floor
+        // function to get ceil
         double d3=Math.ceil(c);
         // convert from double to int
         int value2 = (int)d3;
 
-        // function to get floor
+        // function to get round
         double d4=Math.round(c);
         // convert from double to int
         int value3 = (int)d4;
