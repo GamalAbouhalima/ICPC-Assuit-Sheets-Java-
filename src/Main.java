@@ -55,11 +55,24 @@ public class Main {
         System.out.printf("%.9f",area);
 
     }
+    static void problem_F_Digits_Summation(){
+        Scanner scan=new Scanner(System.in);
+        long n,m;
+        n=scan.nextLong();
+        m=scan.nextLong();
+        long last_n=n%10;
+        long last_m=m%10;
+        long sum=last_n+last_m;
+        System.out.println(sum);
+
+
+    }
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
 //        problem_C_Simple_Calculator();
 //        problem_D_Difference();
-        problem_E_Area_of_a_Circle();
+//        problem_E_Area_of_a_Circle();
+        problem_F_Digits_Summation();
     }
 }
