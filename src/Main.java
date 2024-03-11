@@ -76,6 +76,33 @@ public class Main {
         System.out.println(x);
 
     }
+    static void problem_H_Two_numbers(){
+        double a,b;
+        Scanner scan =new Scanner(System.in);
+        a=scan.nextDouble();
+        b=scan.nextDouble();
+        double c = a/b;
+        // function to get floor
+        double d2=Math.floor(c);
+        // convert from double to int
+        int value1 = (int)d2;
+
+        // function to get floor
+        double d3=Math.ceil(c);
+        // convert from double to int
+        int value2 = (int)d3;
+
+        // function to get floor
+        double d4=Math.round(c);
+        // convert from double to int
+        int value3 = (int)d4;
+
+        System.out.println("floor "+(int)a+" "+"/"+" "+(int)b+" "+"= "+value1);
+        System.out.println("ceil "+(int)a+" "+"/"+" "+(int)b+" "+"= "+value2);
+        System.out.println("round "+(int)a+" "+"/"+" "+(int)b+" "+"= "+value3);
+
+
+    }
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
@@ -83,6 +110,7 @@ public class Main {
 //        problem_D_Difference();
 //        problem_E_Area_of_a_Circle();
 //        problem_F_Digits_Summation();
-        problem_G_Summation_from_1_to_N();
+//        problem_G_Summation_from_1_to_N();
+        problem_H_Two_numbers();
     }
 }
