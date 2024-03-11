@@ -67,12 +67,22 @@ public class Main {
 
 
     }
+    static void problem_G_Summation_from_1_to_N(){
+        long n;
+        long sum=0L;
+        Scanner scan =new Scanner(System.in);
+        n=scan.nextLong();
+        long x=n*(n+1)/2;
+        System.out.println(x);
+
+    }
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
 //        problem_C_Simple_Calculator();
 //        problem_D_Difference();
 //        problem_E_Area_of_a_Circle();
-        problem_F_Digits_Summation();
+//        problem_F_Digits_Summation();
+        problem_G_Summation_from_1_to_N();
     }
 }
