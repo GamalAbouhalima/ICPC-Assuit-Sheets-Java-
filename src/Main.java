@@ -166,6 +166,23 @@ public class Main {
         }
 
     }
+    static void Problem_N_Char(){
+        Scanner scan =new Scanner(System.in);
+        char in=scan.next().charAt(0);
+        int inNum=in;
+        if (inNum >= 97 && inNum <= 122) { // Small letters
+            int diff = inNum - 32;
+            char outputSmall = (char) diff;
+            System.out.println(outputSmall);
+
+        } else if (inNum >= 65 && inNum <= 90) { // Capital Letters
+            int diff = inNum + 32;
+            char outputCapital = (char) diff;
+            System.out.println(outputCapital);
+        }
+
+
+    }
 
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
@@ -180,6 +197,7 @@ public class Main {
 //        problem_J_Multiples();
 //        problem_K_Max_and_Min();
 //        Problem_L_The_Brothers();
-        Problem_M_Capital_or_Small_or_Digit();
+//        Problem_M_Capital_or_Small_or_Digit();
+        Problem_N_Char();
     }
 }
