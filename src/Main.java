@@ -149,6 +149,23 @@ public class Main {
             System.out.println("NOT");
 
         }    }
+    static void Problem_M_Capital_or_Small_or_Digit(){
+        Scanner scan=new Scanner(System.in);
+        char letter=scan.next().charAt(0);
+        int letter_num=letter;
+//        System.out.println(letter_num);
+        if(letter_num >= 65 && letter_num <= 122){
+            System.out.println("ALPHA");
+            if(letter_num >= 97 && letter_num <= 122){
+                System.out.println("IS SMALL");
+            } else if (letter_num >= 65 && letter_num <= 90) {
+                System.out.println("IS CAPITAL");
+            }
+        }else {
+            System.out.println("IS DIGIT");
+        }
+
+    }
 
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
@@ -162,7 +179,7 @@ public class Main {
 //        problem_I_Welcome_for_you_with_Conditions();
 //        problem_J_Multiples();
 //        problem_K_Max_and_Min();
-        Problem_L_The_Brothers();
-
+//        Problem_L_The_Brothers();
+        Problem_M_Capital_or_Small_or_Digit();
     }
 }
