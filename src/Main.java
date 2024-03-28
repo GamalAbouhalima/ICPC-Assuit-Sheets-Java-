@@ -126,6 +126,15 @@ public class Main {
             System.out.println("No Multiples");
         }
     }
+    static void problem_K_Max_and_Min(){
+        Scanner scan=new Scanner(System.in);
+        int num1=scan.nextInt();
+        int num2=scan.nextInt();
+        int num3=scan.nextInt();
+        int max=Math.max(num1,Math.max(num2,num3));
+        int min=Math.min(num1,Math.min(num2,num3));
+        System.out.println(min+" "+max);
+    }
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
@@ -136,7 +145,8 @@ public class Main {
 //        problem_G_Summation_from_1_to_N();
 //        problem_H_Two_numbers();
 //        problem_I_Welcome_for_you_with_Conditions();
-        problem_J_Multiples();
+//        problem_J_Multiples();
+        problem_K_Max_and_Min();
 
     }
 }
