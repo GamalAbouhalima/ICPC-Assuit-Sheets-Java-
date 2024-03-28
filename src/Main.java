@@ -135,6 +135,21 @@ public class Main {
         int min=Math.min(num1,Math.min(num2,num3));
         System.out.println(min+" "+max);
     }
+    static void Problem_L_The_Brothers(){
+        Scanner scan=new Scanner(System.in);
+        String p1F=scan.next();
+        String p1S=scan.next();
+
+        String p2F=scan.next();
+        String p2S=scan.next();
+
+        if (p1S.equals(p2S)){
+            System.out.println("ARE Brothers");
+        }else {
+            System.out.println("NOT");
+
+        }    }
+
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
@@ -146,7 +161,8 @@ public class Main {
 //        problem_H_Two_numbers();
 //        problem_I_Welcome_for_you_with_Conditions();
 //        problem_J_Multiples();
-        problem_K_Max_and_Min();
+//        problem_K_Max_and_Min();
+        Problem_L_The_Brothers();
 
     }
 }
