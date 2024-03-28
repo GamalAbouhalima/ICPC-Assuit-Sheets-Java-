@@ -145,7 +145,8 @@ public class Main {
 //        problem_G_Summation_from_1_to_N();
 //        problem_H_Two_numbers();
 //        problem_I_Welcome_for_you_with_Conditions();
-        problem_J_Multiples();
+//        problem_J_Multiples();
+        problem_K_Max_and_Min();
 
     }
 }
