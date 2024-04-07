@@ -183,6 +183,64 @@ public class Main {
 
 
     }
+    static void Problem_O_Calculator(){
+        char op='+';
+        int count =0;
+        Scanner scan=new Scanner(System.in);
+        String str=scan.next();
+        for(int i=0;i<str.length();i++){
+            if(str.charAt(i)=='+'){
+                op=str.charAt(i);
+                String num1=str.substring(0,i);
+                int num1Int=Integer.parseInt(num1);
+
+                String num2=str.substring(i+1,str.length());
+                int num2Int=Integer.parseInt(num2);
+                int res=num1Int+num2Int;
+                System.out.println(res);
+
+
+
+            }else if(str.charAt(i)=='-'){
+                op=str.charAt(i);
+                String num1=str.substring(0,i);
+                int num1Int=Integer.parseInt(num1);
+
+                String num2=str.substring(i+1,str.length());
+                int num2Int=Integer.parseInt(num2);
+                int res=num1Int-num2Int;
+                System.out.println(res);
+            }else if(str.charAt(i)=='*'){
+                op=str.charAt(i);
+                String num1=str.substring(0,i);
+                int num1Int=Integer.parseInt(num1);
+
+                String num2=str.substring(i+1,str.length());
+                int num2Int=Integer.parseInt(num2);
+                int res=num1Int*num2Int;
+                System.out.println(res);
+            }
+            else if(str.charAt(i)=='/'){
+                op=str.charAt(i);
+                String num1=str.substring(0,i);
+                int num1Int=Integer.parseInt(num1);
+
+                String num2=str.substring(i+1,str.length());
+                int num2Int=Integer.parseInt(num2);
+                int res=num1Int/num2Int;
+                System.out.println(res);
+
+            }
+        }
+
+
+//        int num1=Integer.parseInt(arrOfStr[0]);
+//        char operation=arrOfStr[1].charAt(0);
+//        int num2=Integer.parseInt(arrOfStr[2]);
+//        System.out.println(num1+"   "+operation+"   "+num2);
+//
+//
+    }
 
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
@@ -198,6 +256,7 @@ public class Main {
 //        problem_K_Max_and_Min();
 //        Problem_L_The_Brothers();
 //        Problem_M_Capital_or_Small_or_Digit();
-        Problem_N_Char();
+//        Problem_N_Char();
+        Problem_O_Calculator();
     }
 }
