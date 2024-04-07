@@ -254,6 +254,27 @@ public class Main {
 
 
     }
+    static void Problem_Q_Coordinates_of_a_Point(){
+        Scanner scan=new Scanner(System.in);
+        double x=scan.nextDouble();
+        double y=scan.nextDouble();
+        if(x>0 && y>0){
+            System.out.println("Q1");
+        }else if(x<0 && y>0){
+            System.out.println("Q2");
+        }else if(x<0 && y<0){
+            System.out.println("Q3");
+        }else if(x>0 && y<0){
+            System.out.println("Q4");
+        }else if(x==0 && y==0){
+            System.out.println("Origem");
+        }else if(x==0 && y!=0){
+            System.out.println("Eixo Y");
+
+        }else if (y==0 && x!=0){
+            System.out.println("Eixo X");
+        }
+    }
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
@@ -270,6 +291,7 @@ public class Main {
 //        Problem_M_Capital_or_Small_or_Digit();
 //        Problem_N_Char();
 //        Problem_O_Calculator();
-        Problem_P_First_digit();
+//        Problem_P_First_digit();
+        Problem_Q_Coordinates_of_a_Point();
     }
 }
