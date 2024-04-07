@@ -241,7 +241,19 @@ public class Main {
 //
 //
     }
+    static void Problem_P_First_digit(){
+        Scanner scan =new Scanner(System.in);
+        String input=scan.next();
+        char inputInt=input.charAt(0);
+        // to get first digit
+        int firstDigit=Character.getNumericValue(inputInt);
+        if(firstDigit % 2 == 0){
+            System.out.println("EVEN");
+        }else
+            System.out.println("ODD");
 
+
+    }
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
@@ -257,6 +269,7 @@ public class Main {
 //        Problem_L_The_Brothers();
 //        Problem_M_Capital_or_Small_or_Digit();
 //        Problem_N_Char();
-        Problem_O_Calculator();
+//        Problem_O_Calculator();
+        Problem_P_First_digit();
     }
 }
