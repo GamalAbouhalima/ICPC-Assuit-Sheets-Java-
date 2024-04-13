@@ -275,6 +275,18 @@ public class Main {
             System.out.println("Eixo X");
         }
     }
+    static void Problem_R_Age_in_Days(){
+       Scanner scan =new Scanner(System.in);
+       int numOfDays=scan.nextInt();
+       int numOfYears=(int)numOfDays/365;
+       System.out.println(numOfYears+" years");
+       int daysOfYears=numOfYears*365;
+       int remainingDays=numOfDays-daysOfYears;
+       int numOfMonths=(int) remainingDays/30;
+       System.out.println(numOfMonths+" months");
+       int days=remainingDays-(numOfMonths*30);
+        System.out.println(days+" days");
+    }
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
@@ -292,6 +304,7 @@ public class Main {
 //        Problem_N_Char();
 //        Problem_O_Calculator();
 //        Problem_P_First_digit();
-        Problem_Q_Coordinates_of_a_Point();
+//        Problem_Q_Coordinates_of_a_Point();
+        Problem_R_Age_in_Days();
     }
 }
