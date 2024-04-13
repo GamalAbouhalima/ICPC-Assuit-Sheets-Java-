@@ -287,6 +287,34 @@ public class Main {
        int days=remainingDays-(numOfMonths*30);
         System.out.println(days+" days");
     }
+    static void Problem_S_Interval(){
+        /*
+          The symbol '(' represents greater than.
+          The symbol ')' represents smaller than.
+          The symbol '[' represents greater than or equal.
+          The symbol ']' represents smaller than or equal.
+         */
+        /*
+        * [0,25]   0<=X<=25
+        * (25,50]  25<X<=50
+        * (50,75]  50<X<=75
+        * (75,100]    75<X<=100
+        */
+        Scanner scan=new Scanner(System.in);
+        float x=scan.nextFloat();
+        if(x>=0 && x<=25){  // [0,25]   0<=X<=25
+            System.out.println("Interval [0,25]");
+        }else if(x>25 && x<=50){ //25<X<=50
+            System.out.println("Interval (25,50]");
+        }else if(x>50 && x<=75){// (50,75]  50<X<=75
+            System.out.println("Interval (50,75]");
+        }else if(x>75 && x<=100){ // (75,100]    75<X<=100
+            System.out.println("Interval (75,100]");
+        }else {
+            System.out.println("Out of Intervals");
+        }
+
+    }
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
@@ -305,6 +333,7 @@ public class Main {
 //        Problem_O_Calculator();
 //        Problem_P_First_digit();
 //        Problem_Q_Coordinates_of_a_Point();
-        Problem_R_Age_in_Days();
+//        Problem_R_Age_in_Days();
+        Problem_S_Interval();
     }
 }
