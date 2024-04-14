@@ -360,6 +360,20 @@ public class Main {
 
 
     }
+    static void Problem_U_Float_or_int(){
+        Scanner scan=new Scanner(System.in);
+        double input=scan.nextDouble();
+        // to check if the number is integer
+        if(input % 1 == 0){
+            System.out.println("int "+(int)input);
+        }else {
+            double res=input % 1;//0.958
+            input=input-res;// 534.958-0.958 = 534.0
+            System.out.printf("float "+(int)input+" "+"%,.3f",res);//%,.3f--> to print only 3 digit after zero
+
+        }
+
+    }
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
@@ -380,6 +394,8 @@ public class Main {
 //        Problem_Q_Coordinates_of_a_Point();
 //        Problem_R_Age_in_Days();
 //        Problem_S_Interval();
-        Problem_T_Sort_Numbers();
+//        Problem_T_Sort_Numbers();
+        Problem_U_Float_or_int();
     }
+
 }
