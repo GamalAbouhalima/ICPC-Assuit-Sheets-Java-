@@ -315,6 +315,51 @@ public class Main {
         }
 
     }
+    static void Problem_T_Sort_Numbers(){
+        Scanner scan =new Scanner(System.in);
+        int num1=scan.nextInt();
+        int num2=scan.nextInt();
+        int num3=scan.nextInt();
+        int max,min,middleNum;
+        if(num1>=num2 && num1>=num3){
+            max=num1;
+            if(num2>=num3){
+                middleNum=num2;
+                min=num3;
+            }else{
+                middleNum=num3;
+                min=num2;
+            }
+        }else if(num2>=num1 && num2>=num3){
+            max=num2;
+            if(num1>=num3){
+                middleNum=num1;
+                min=num3;
+            }else{
+                middleNum=num3;
+                min=num1;
+            }
+
+        }else {
+            max=num3;
+            if(num1>=num2){
+                middleNum=num1;
+                min=num2;
+            }else{
+                middleNum=num2;
+                min=num1;
+            }
+        }
+        System.out.println(min);
+        System.out.println(middleNum);
+        System.out.println(max);
+        System.out.println();
+        System.out.println(num1);
+        System.out.println(num2);
+        System.out.println(num3);
+
+
+    }
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
@@ -334,6 +379,7 @@ public class Main {
 //        Problem_P_First_digit();
 //        Problem_Q_Coordinates_of_a_Point();
 //        Problem_R_Age_in_Days();
-        Problem_S_Interval();
+//        Problem_S_Interval();
+        Problem_T_Sort_Numbers();
     }
 }

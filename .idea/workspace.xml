@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00f87808-f003-4267-a0f5-198322bb26be" name="Changes" comment="Problem_N">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_28_2024_8_25_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_28_2024_8_25_AM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="00f87808-f003-4267-a0f5-198322bb26be" name="Changes" comment="Problem_O">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -69,7 +67,7 @@
       <workItem from="1710533822518" duration="114000" />
       <workItem from="1711603467712" duration="12452000" />
       <workItem from="1712491879973" duration="135000" />
-      <workItem from="1712492151745" duration="5423000" />
+      <workItem from="1712492151745" duration="32271000" />
     </task>
     <task id="LOCAL-00001" summary="Problem_K1">
       <option name="closed" value="true" />
@@ -95,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711610818022</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Problem_O">
+      <option name="closed" value="true" />
+      <created>1712500290970</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712500290970</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,7 +122,8 @@
     <MESSAGE value="Problem_K1" />
     <MESSAGE value="Problem_M" />
     <MESSAGE value="Problem_N" />
-    <option name="LAST_COMMIT_MESSAGE" value="Problem_N" />
+    <MESSAGE value="Problem_O" />
+    <option name="LAST_COMMIT_MESSAGE" value="Problem_O" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
