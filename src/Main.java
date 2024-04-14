@@ -402,6 +402,36 @@ public class Main {
         }
 
     }
+    static void Problem_W_Mathematical_Expression() {
+        boolean flag =false;
+        Scanner scan = new Scanner(System.in);
+        int num1 = scan.nextInt();
+        char s = scan.next().charAt(0); // +,-,*
+        int num2 = scan.nextInt();
+        char q = scan.next().charAt(0); // =
+        int result=scan.nextInt();
+
+        int res1 = num1 + num2;
+        int res2 = num1 - num2;
+        int res3 = num1 * num2;
+        if(res1 == result && s=='+'){
+            System.out.println("Yes");
+        }else if(res1 != result&& s=='+'){
+            System.out.println(res1);
+        }
+        else if(res2 == result && s=='-'){
+            System.out.println("Yes");
+        }else if(res2 != result&& s=='-'){
+            System.out.println(res2);
+        }
+        else if(res3 == result && s=='*'){
+            System.out.println("Yes");
+        }
+        else if(res3 != result&& s=='*'){
+            System.out.println(res3);
+        }
+
+    }
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
@@ -424,7 +454,8 @@ public class Main {
 //        Problem_S_Interval();
 //        Problem_T_Sort_Numbers();
 //        Problem_U_Float_or_int();
-        Problem_V_Comparison();
+//        Problem_V_Comparison();
+        Problem_W_Mathematical_Expression();
     }
 
 }
