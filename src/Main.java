@@ -374,6 +374,34 @@ public class Main {
         }
 
     }
+    static void Problem_V_Comparison(){
+        Scanner scan=new Scanner(System.in);
+        int num1=scan.nextInt();
+        char op=scan.next().charAt(0);
+        int num2=scan.nextInt();
+        switch (op){
+            case '<':
+                if(num1<num2){
+                    System.out.println("Right");
+                }else
+                    System.out.println("Wrong");
+                break;
+            case '>':
+                if(num1>num2){
+                    System.out.println("Right");
+                }else
+                    System.out.println("Wrong");
+                break;
+            case '=':
+                if(num1==num2){
+                    System.out.println("Right");
+                }else
+                    System.out.println("Wrong");
+                break;
+
+        }
+
+    }
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
@@ -395,7 +423,8 @@ public class Main {
 //        Problem_R_Age_in_Days();
 //        Problem_S_Interval();
 //        Problem_T_Sort_Numbers();
-        Problem_U_Float_or_int();
+//        Problem_U_Float_or_int();
+        Problem_V_Comparison();
     }
 
 }
