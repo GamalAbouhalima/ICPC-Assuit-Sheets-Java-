@@ -432,6 +432,28 @@ public class Main {
         }
 
     }
+    static void Problem_X_Two_intervals(){
+        Scanner scan =new Scanner(System.in);
+        int l1=scan.nextInt(); // 1
+        int r1=scan.nextInt(); // 15
+        int l2=scan.nextInt(); // 5
+        int r2=scan.nextInt(); // 27
+        int start,end;
+        if((l1>l2 && l1>r2)||(r1<l2 && r1<r2)) {// no inter action
+            System.out.println(-1);
+        }else{
+            if(l1>l2) {
+                start = l1;
+            }else { // (l2>l1)
+                start=l2;
+            }if (r1<r2){
+                end=r1;
+            }else { // (r1>r2)
+                end=r2;
+            }
+            System.out.println(start+" "+end);
+        }
+    }
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
@@ -455,7 +477,8 @@ public class Main {
 //        Problem_T_Sort_Numbers();
 //        Problem_U_Float_or_int();
 //        Problem_V_Comparison();
-        Problem_W_Mathematical_Expression();
+//        Problem_W_Mathematical_Expression();
+        Problem_X_Two_intervals();
     }
 
 }
