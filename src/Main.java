@@ -454,6 +454,25 @@ public class Main {
             System.out.println(start+" "+end);
         }
     }
+    static void Problem_Y_The_last_2_digits(){
+        Scanner scan =new Scanner(System.in);
+        int num1=scan.nextInt();
+        int num2=scan.nextInt();
+        int num3=scan.nextInt();
+        int num4=scan.nextInt();
+
+        int newNum1 = num1 % 100; //301 mod 100=1
+        int newNum2 = num2 % 100; //302 mod 100=2
+        int newNum3 = num3 % 100; //303 mod 100=3
+        int newNum4 = num4 % 100; //30 mod 100=4
+                //= 1     * 2     * 3     * 4
+        int result=(newNum1*newNum2*newNum3*newNum4)%100;
+        if(result<=9){
+            System.out.println("0"+result);
+        }else
+            System.out.println(result);
+
+    }
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
@@ -478,7 +497,8 @@ public class Main {
 //        Problem_U_Float_or_int();
 //        Problem_V_Comparison();
 //        Problem_W_Mathematical_Expression();
-        Problem_X_Two_intervals();
+//        Problem_X_Two_intervals();
+        Problem_Y_The_last_2_digits();
     }
 
 }
