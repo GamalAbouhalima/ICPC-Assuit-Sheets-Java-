@@ -473,6 +473,26 @@ public class Main {
             System.out.println(result);
 
     }
+    static void Problem_Z_Hard_Compare(){
+        Scanner scan =new Scanner(System.in);
+        double num1=scan.nextDouble();
+        double pow1=scan.nextDouble();
+        double num2=scan.nextDouble();
+        double pow2=scan.nextDouble();
+
+        // log(2 pow 5) = 5log(2) --> To reduce the number
+        // log(3 pow 6) = 6log(3) --> To reduce the number
+        double equation1=(pow1*Math.log(num1));
+        double equation2=(pow2*Math.log(num2));
+
+        if(equation1>equation2){
+            System.out.println("YES");
+        }else
+            System.out.println("NO");
+
+
+    }
+
     public static void main(String[] args) {
 //        problem_A_Say_Hello();
 //        problem_B_Basic_Data_Types();
@@ -498,7 +518,8 @@ public class Main {
 //        Problem_V_Comparison();
 //        Problem_W_Mathematical_Expression();
 //        Problem_X_Two_intervals();
-        Problem_Y_The_last_2_digits();
+//        Problem_Y_The_last_2_digits();
+        Problem_Z_Hard_Compare();
     }
 
 }
