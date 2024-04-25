@@ -1,7 +1,8 @@
-Sheet #1 (Data type - Conditions)
-ICPC Assiut Sheets (Java)
-A problem is a function. If you want this problem to work, remove the comment. 
-Example:- 
+Sheet #1 (Data type - Conditions)[Java] 
+==============================================================================
+* A problem is a function. If you want to run the problem , delete the comment. 
++ Example:-
+```
 import java.util.Scanner;
 public class Main {
     static void problem_A_Say_Hello(){
@@ -16,4 +17,5 @@ public class Main {
       //    problem_B_Basic_Data_Types(); ---------> It's not working.
 }
 }
+```
 
